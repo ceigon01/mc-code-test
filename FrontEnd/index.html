@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MC-test-Jason Smith</title>
+        <!-- MasteryConnect-->
+        <link href="css/styles.css" rel="stylesheet"></link>
+    </head>
+    <body>
+    <!-- Content header begin -->
+    <div class="header">
+        <img src="img/logo.png" height="40"/>
+    </div>
+    <div class="sub-header">
+        <div>SIGN UP</div>
+        <div class="subtitle">Let us know about yourself</div>
+    </div>
+    <div class="msg-container"></div>
+    <!-- Content header end -->
+    <!-- Content body start -->
+    <div class="container">
+        <form id="main" method="get">
+            <div class="column">
+                <div>First Name*</div>
+                <div><input type="text" id="firstName" name="firstName" validate="true"/></div>
+                <div>Last Name*</div>
+                <div><input type="text" id="lastName" name="lastName" validate="true"/></div>
+                <div>Phone</div>
+                <div><input type="text" id="phone" name="phone"/></div>
+                <div>Email*</div>
+                <div><input type="text" id="email" name="email" validate="true" />
+                <img id="emailAvailable" src="img/emailavailable.png"  width="20"  align="absmiddle"/> </div>
+            </div>
+            <div class="column">
+                <div class="text-align">Short Bio*</div>
+                <div><textarea maxlength='1000'></textarea></div>
+                <div class="button-container"><button class="align-bottom">Submit</button></div>
+        </div>
+        </form>
+    </div>
+    <!-- Content body end -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/form.js"></script>
+    </body>
+</html>

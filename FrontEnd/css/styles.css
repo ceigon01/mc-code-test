@@ -1,0 +1,119 @@
+/*------------------ Add CSS Here ------------------- */
+body{
+    background:#F5F5F5;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans',Arial,Helvetica,Tahoma,sans-serif;
+    font-size: 15px;
+    line-height: 1.33em;
+    font-weight: 400;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    margin: 40px;
+}
+.header{
+    background-color:#77A92D;
+    margin:-40px -40px 40px -40px;
+    height: 70px;
+}
+.header img{
+    margin: 14px 0px 0px 37px;
+}
+.sub-header{
+    height: 80px;
+    color:#111;
+}
+.msg-container{
+    display:none;
+    color:darkred;
+}
+.sub-header > .subtitle{
+    color:#999;
+    line-height:30px;
+}
+.container {
+    display: table;
+}
+.column {
+    display: table-cell;
+    width: 400px;
+    line-height: 45px;
+    max-width: 300px;
+}
+.column div{
+    width: 120px;
+    display: inline-block;
+    white-space: nowrap;
+}
+.text-align{
+    text-align: right;
+    padding-right: 20px;
+}
+input{
+    height: 24px;
+}
+textarea{
+    display: table-cell;
+    vertical-align: top;
+    min-height: 157px;
+    margin-top:10px;
+}
+input,textarea{
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    border:solid 1px  #ddd;
+    border-radius: 2px;
+    width: 150px;
+}
+button{
+    min-width:100px;
+    height: 40px;
+    border:solid 1px  #ddd;
+    background: #fafafa;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.invalid{
+    border:1px solid darkred;
+    background-color: salmon;
+    color:#fff;
+}
+.button-container{
+    height:172px;
+    position: absolute;
+    margin-left: 60px;
+}
+.align-bottom{
+    position: absolute;
+    bottom: 0;
+}
+#emailAvailable{
+    display:none;
+}
+/* mobile phone */
+@media all and (max-width: 768px) {
+    .container,.column{
+        display:block;
+    }
+    .column{
+        line-height: 30px;
+        width:200px;
+    }
+    input,textarea{
+        margin-bottom:10px;
+        width:200px;
+    }
+    textarea{
+        margin-top:0px;
+        min-height: 100px;
+    }
+    .button-container{
+        height: 45px;
+        position: relative;
+        margin-left: 0px;
+    }
+    .text-align{
+        text-align: left;
+    }
+}
